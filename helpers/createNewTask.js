@@ -1,27 +1,6 @@
-const getProjects = async () => {
-  const requestInfo = {
-    method: 'GET',
-    headers: {
-      Authorization: 'Bearer a5a0ce723d7453794af29a0850bcde7ffbde7aa7',
-    }
-  };
-  const url = 'https://api.todoist.com/rest/v1/projects';
-  const response = await fetch(url, requestInfo);
-  const data = await response.json();
-  return data;
-};
-
-const getIdProject = async () => {
-  const projectID = await getProjects();
-  return projectID[0].id;
-};
-
-// console.log(getIdProject());
-
-const TOKEN_API = 'a5a0ce723d7453794af29a0850bcde7ffbde7aa7';
-
-const createNewTask = async (task, projectID) => {
-  const id = await projectID;
+export default async function createNewTask(token, task, projectID) {
+  const id = await projectID[0].id;
+  console.log(id);
   const requestInfo = {
     method: 'POST',
     data: {
@@ -29,13 +8,10 @@ const createNewTask = async (task, projectID) => {
     },
     headers: {
       'Content-Type': 'application/json',
-      'X-Request-Id': `${id}`,
-      Authorization: `Bearer ${TOKEN_API}`,
+      'X-Request-Id': '$(uuidgen)',
+      Authorization: `Bearer ${token}`,
     }
   };
   const url = 'https://api.todoist.com/rest/v1/tasks';
   await fetch(url, requestInfo);
 };
-
-createNewTask('Teste 1', getIdProject()).then();
-// console.log(createNewTask(getIdProject));
