@@ -7,16 +7,32 @@
 
 :root {
     --background--page: #F4EEE6;
+    --background--textarea: #E5E5E5;
+    --button-green: #62dc79;
+    --button-green1: #0ea52e;
+    --color-font-1: #494846;
+    --color-font-1: #88857f;
 }
 
 body {
     background: var(--background--page);
 }
 
+/* ELEMENTOS */
 main {
     width: 90%;
     height: 100vh;
     margin: auto;
+}
+
+form {
+  width: 100%;
+}
+
+/* CONTROLE DE PAGE/SECTION */
+
+#page2 {
+  display: none;
 }
 
 #page1 {
@@ -49,7 +65,7 @@ main {
     font-size: 48px;
     font-weight: 700;
 
-    background: #23D44A;
+    background: var(--button-green);
     opacity: 70%;
 
     border: none;
@@ -58,7 +74,7 @@ main {
     cursor: pointer;
 }
 
-.capture-container .capture:hover {
+.capture-container .btn-capture:hover {
     margin: 0px 0px auto 0px;
     width: 321px;
     height: 133px;
@@ -66,13 +82,38 @@ main {
     font-size: 48px;
     font-weight: 700;
 
-    background: #0ea52e;
+    background: var(--button-green1);
     opacity: 70%;
 
     border: none;
     border-radius: 16px;
 
     cursor: pointer;
+}
+
+#form-capture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  margin: 100px;
+}
+
+#form-capture .btn-capture{
+  margin: 50px;
+}
+
+.capture-text {
+  width: 80%;
+  background-color: var(--background--textarea);
+  font-size: 3rem;
+  color: var(--color-font-1);
+  text-align: center;
+  padding: 30px;
+  border-radius: 30px;
+  height: 400px;
+  resize: none;
+  border: solid 2px var(--button-green);
 }
 
 .logo {
