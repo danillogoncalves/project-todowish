@@ -1,0 +1,23 @@
+{
+  "name": "project-todowish",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danillogoncalves/project-todowish.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danillogoncalves/project-todowish/issues"
+  },
+  "homepage": "https://github.com/danillogoncalves/project-todowish#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
