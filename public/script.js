@@ -1,11 +1,11 @@
-import getTasks from './helpers/getTasks.js';
-import getOneTask from './helpers/getOneTask.js';
-import getProjects from './helpers/getProjects.js';
-import createNewTask from '/helpers/createNewTask.js';
-import deleteTasks from './helpers/deleteTask.js';
-import updateTask from './helpers/updateTask.js';
-import getLabels from './helpers/getLabels.js';
-import createLabel from './helpers/createLabel.js';
+import getTasks from '../helpers/getTasks.js';
+import getOneTask from '../helpers/getOneTask.js';
+import getProjects from '../helpers/getProjects.js';
+import createNewTask from '../helpers/createNewTask.js';
+import deleteTasks from '../helpers/deleteTask.js';
+import updateTask from '../helpers/updateTask.js';
+import getLabels from '../helpers/getLabels.js';
+import createLabel from '../helpers/createLabel.js';
 
 const buttonCapt = document.querySelector('.btn-capture'); // botão capturar page1
 const buttonCassfy = document.querySelector('.classfy'); // botão capturar page2
