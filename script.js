@@ -7,15 +7,23 @@ import updateTask from './helpers/updateTask.js';
 import getLabels from './helpers/getLabels.js';
 import createLabel from './helpers/createLabel.js';
 
+const buttonCapt = document.querySelector('.btn-capture'); // botão capturar page1
+const buttonCassfy = document.querySelector('.classfy'); // botão capturar page2
+
 // Script botão inicial
-document.querySelector('.btn-capture').addEventListener('click', () => {
+buttonCapt.addEventListener('click', () => {
   // ocultar o page1
   document.querySelector('.inicial-capture').id = 'page1';
   // inserir page 2
   document.querySelector('.capture-thing').classList.remove('page2');
 })
 
-
+// cria a task
+buttonCassfy.addEventListener('click', () => {
+  const taskCapture = document.querySelector('.capture-text'); // textarea do capturar task
+  const task = taskCapture.value;
+  createNewTask('934509d71c8b03ad32cc2d84eed7585ee2991228', task);
+})
 
 // criando todas as labels
 let createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'incubar', 30);
@@ -26,8 +34,8 @@ createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'ag
 createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'casa', 45);
 createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'trabalho', 34);
 createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'rua', 33);
-const getAllLabels = await getLabels('934509d71c8b03ad32cc2d84eed7585ee2991228');
-console.log(getAllLabels);
+// const getAllLabels = await getLabels('934509d71c8b03ad32cc2d84eed7585ee2991228');
+// console.log(getAllLabels);
 
 // window.onload para testar os imports
 window.onload = async () => {
