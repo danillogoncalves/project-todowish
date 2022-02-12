@@ -15,6 +15,10 @@ document.querySelector('.btn-capture').addEventListener('click', () => {
 // cria a label incubar
 const createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'incubar', 30);
 console.log(createLabels);
+const createLabels1 = await createLabel('a5a0ce723d7453794af29a0850bcde7ffbde7aa7', 'incubar', 30);
+console.log(createLabels1);
+const getLabels1 = await getLabels('a5a0ce723d7453794af29a0850bcde7ffbde7aa7');
+console.log(getLabels1);
 
 // window.onload para testar os imports
 window.onload = async () => {
