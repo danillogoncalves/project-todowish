@@ -43,6 +43,24 @@ form {
   margin: auto;
 }
 
+.logo-h1 {
+  margin: auto 0px 100px 0px;
+  font-size: 35px;
+  opacity: 70%;
+}
+
+.icons-container {
+  display: flex;
+  margin: 0px 0px auto 0px;
+  width: 400px;
+  justify-content: space-between;
+}
+
+.icons-container img {
+  width: 100px;
+  height: 100px;
+}
+
 #page1 {
     display: none;
 }
