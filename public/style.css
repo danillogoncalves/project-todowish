@@ -151,7 +151,7 @@ form {
   }
   
   .process-main h2 {
-  color: #191919;
+  color: var(--process-gray1);
   margin-bottom: 80px;
   text-align: center;
   font-size: 2rem;
