@@ -4,6 +4,7 @@ import getProjects from './helpers/getProjects.js';
 import createNewTask from '/helpers/createNewTask.js';
 import deleteTasks from './helpers/deleteTask.js';
 import updateTask from './helpers/updateTask.js';
+import getLabels from './helpers/getLabels.js';
 
 // Script botão inicial
 document.querySelector('.btn-capture').addEventListener('click', () => {
