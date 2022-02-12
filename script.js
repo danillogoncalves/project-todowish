@@ -3,11 +3,16 @@ import getOneTask from './helpers/getOneTask.js';
 import getProjects from './helpers/getProjects.js';
 import createNewTask from '/helpers/createNewTask.js';
 import deleteTasks from './helpers/deleteTask.js';
+import createLabel from './helpers/createLabel.js';
 
 // Script botão inicial
 document.querySelector('.btn-capture').addEventListener('click', () => {
   document.querySelector('.capture-container').id = 'page1';
 })
+
+// cria a label incubar
+const createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'incubar', 30);
+console.log(createLabels);
 
 // window.onload para testar os imports
 window.onload = async () => {
