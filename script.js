@@ -12,13 +12,17 @@ document.querySelector('.btn-capture').addEventListener('click', () => {
   document.querySelector('.capture-container').id = 'page1';
 })
 
-// cria a label incubar
-const createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'incubar', 30);
-console.log(createLabels);
-const createLabels1 = await createLabel('a5a0ce723d7453794af29a0850bcde7ffbde7aa7', 'incubar', 30);
-console.log(createLabels1);
-const getLabels1 = await getLabels('a5a0ce723d7453794af29a0850bcde7ffbde7aa7');
-console.log(getLabels1);
+// criando todas as labels
+let createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'incubar', 30);
+createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'referencia', 39);
+createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'delegar', 35);
+createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'próxima ação', 32);
+createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'agendar', 41);
+createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'casa', 45);
+createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'trabalho', 34);
+createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'rua', 33);
+const getAllLabels = await getLabels('934509d71c8b03ad32cc2d84eed7585ee2991228');
+console.log(getAllLabels);
 
 // window.onload para testar os imports
 window.onload = async () => {
