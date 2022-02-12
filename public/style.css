@@ -31,24 +31,24 @@ form {
 
 /* CONTROLE DE PAGE/SECTION */
 
-#page2 {
-  display: none;
+.capture-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 #page1 {
     display: none;
 }
 
-.capture-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    margin: auto;
+.page2 {
+  display: none;
 }
 
 .capture-container h2{

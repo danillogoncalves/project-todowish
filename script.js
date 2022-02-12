@@ -9,8 +9,13 @@ import createLabel from './helpers/createLabel.js';
 
 // Script botão inicial
 document.querySelector('.btn-capture').addEventListener('click', () => {
-  document.querySelector('.capture-container').id = 'page1';
+  // ocultar o page1
+  document.querySelector('.inicial-capture').id = 'page1';
+  // inserir page 2
+  document.querySelector('.capture-thing').classList.remove('page2');
 })
+
+
 
 // criando todas as labels
 let createLabels = await createLabel('934509d71c8b03ad32cc2d84eed7585ee2991228', 'incubar', 30);
