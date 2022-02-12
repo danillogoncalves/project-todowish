@@ -169,17 +169,35 @@ form {
   border: solid 1px var(--process-gray1);
   }
   
-  .tasks li:hover{
+  .tasks li:hover {
   background-color:  var(--process-yellow);
   color: var(--process-gray1);
   }
   
-  
-  .process-is-action{
-  
+  /* Process Área */
+
+  .process {
+    width: 1200px;
+    margin-top: 50px;
+    display: flex;
   }
-  
-  
+
+  .process h2 {
+    color: var(--process-gray2)
+  }
+
+  .task {
+    width: 1200px;
+    margin-top: 50px;
+    display: flex;
+  }
+
+  .task h2 {
+    color: var(--process-gray2)
+  }
+
+ 
+  /* Footer */
   .logo {
   width: 100%;
   height: 100px;
