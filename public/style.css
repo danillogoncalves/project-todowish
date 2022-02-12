@@ -12,6 +12,13 @@
     --button-green1: #0ea52e;
     --color-font-1: #494846;
     --color-font-1: #88857f;
+
+    --process-gray1: #191919;
+    --process-gray2: #5e5e5e;
+    --process-gray3: #bebebe;
+    --process-gray4: #f2f2f2;
+    --process-yellow: #ffeb3b;
+    --process-magenta: #673ab7;
 }
 
 body {
@@ -134,11 +141,50 @@ form {
   border: solid 2px var(--button-green);
 }
 
-.logo {
-    display: flex;
-    position: fixed;
-    right: 100px;
-    margin-top: -100px;
+/* Process Área */
 
-    font-size: 20px;
-}
+.process-main {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  }
+  
+  .process-main h2 {
+  color: #191919;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 2rem;
+  }
+  
+  .tasks li{
+  display: block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color:  var(--process-gray3);
+  color: var(--process-gray2);
+  height: 100px;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  border: solid 1px var(--process-gray1);
+  }
+  
+  .tasks li:hover{
+  background-color:  var(--process-yellow);
+  color: var(--process-gray1);
+  }
+  
+  
+  .process-is-action{
+  
+  }
+  
+  
+  .logo {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  }
