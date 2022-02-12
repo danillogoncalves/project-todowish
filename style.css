@@ -124,11 +124,13 @@ form {
   border: solid 2px var(--button-green);
 }
 
+/* Process Área */
+
 .process-main {
   padding: 100px;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 }
 
 .process-main h2 {
@@ -155,9 +157,17 @@ form {
   color: var(--process-gray1);
 }
 
+
+.process-is-action{
+  
+}
+
+
 .logo {
-  width: 80%;
+  width: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 20px;
 }
