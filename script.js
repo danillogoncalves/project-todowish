@@ -7,16 +7,26 @@ import updateTask from './helpers/updateTask.js';
 import getLabels from './helpers/getLabels.js';
 import createLabel from './helpers/createLabel.js';
 
+const buttonCapt = document.querySelector('.btn-capture'); // botão capturar page1
+const buttonCassfy = document.querySelector('.classfy'); // botão capturar page2
+
 const tokenAndre = '1dc766b8f69263dc80c4c56773deafbb8a534232';
 const tokenDanillo = 'a5a0ce723d7453794af29a0850bcde7ffbde7aa7';
 const tokenSheila = '934509d71c8b03ad32cc2d84eed7585ee2991228';
 
 // Script botão inicial
-document.querySelector('.btn-capture').addEventListener('click', () => {
+buttonCapt.addEventListener('click', () => {
   // ocultar o page1
   document.querySelector('.inicial-capture').id = 'page1';
   // inserir page 2
   document.querySelector('.capture-thing').classList.remove('page2');
+})
+
+// cria a task
+buttonCassfy.addEventListener('click', () => {
+  const taskCapture = document.querySelector('.capture-text'); // textarea do capturar task
+  const task = taskCapture.value;
+  createNewTask('934509d71c8b03ad32cc2d84eed7585ee2991228', task);
 })
 
 const labelNames = [
@@ -28,7 +38,7 @@ const labelNames = [
   { name: 'casa', color: 45 },
   { name: 'trabalho', color: 34 },
   { name: 'rua', color: 33 }
-]
+];
 
 // criando todas as labels
 labelNames.forEach(({ name, color }) => {
