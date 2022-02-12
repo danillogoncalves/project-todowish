@@ -26,7 +26,7 @@ buttonCapt.addEventListener('click', () => {
 buttonCassfy.addEventListener('click', () => {
   const taskCapture = document.querySelector('.capture-text'); // textarea do capturar task
   const task = taskCapture.value;
-  createNewTask('934509d71c8b03ad32cc2d84eed7585ee2991228', task);
+  createNewTask(tokenDanillo, task);
 })
 
 const labelNames = [
