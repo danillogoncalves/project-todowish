@@ -15,6 +15,22 @@ const tokenDanillo = 'a5a0ce723d7453794af29a0850bcde7ffbde7aa7';
 const tokenErik = '1f6d65f42bdc3c054ef50c71fbd8deeec3095e73';
 const tokenSheila = '934509d71c8b03ad32cc2d84eed7585ee2991228';
 
+const labelNames = [
+  { name: 'incubar', color: 30 },
+  { name: 'referencia', color: 39 },
+  { name: 'delegar', color: 35 },
+  { name: 'próxima ação', color: 32 },
+  { name: 'agendar', color: 41 },
+  { name: 'casa', color: 45 },
+  { name: 'trabalho', color: 34 },
+  { name: 'rua', color: 33 }
+];
+
+// criando todas as labels
+labelNames.forEach(({ name, color }) => {
+  createLabel(tokenDanillo, name, color);
+});
+
 // Script botão inicial
 buttonCapt.addEventListener('click', () => {
   // ocultar o page1
@@ -30,26 +46,23 @@ buttonCassfy.addEventListener('click', () => {
   createNewTask(tokenDanillo, task);
 });
 
-const labelNames = [
-  { name: 'incubar', color: 30 },
-  { name: 'referencia', color: 39 },
-  { name: 'delegar', color: 35 },
-  { name: 'próxima ação', color: 32 },
-  { name: 'agendar', color: 41 },
-  { name: 'casa', color: 45 },
-  { name: 'trabalho', color: 34 },
-  { name: 'rua', color: 33 }
-];
+const setId = (id) => {
+  return id;
+};
 
-// criando todas as labels
-labelNames.forEach(({ name, color }) => {
-  createLabel(tokenDanillo, name, color);
-  createLabel(tokenAndre, name, color);
-  createLabel(tokenSheila, name, color);
+getTasks(tokenDanillo).then((response) => {
+  const ulTask = document.querySelector('#tasks-to-process');
+  response.forEach(({ content, id }) => {
+    const li = document.createElement('li');
+    li.innerHTML = content;
+    li.addEventListener('click', () => setId(id));
+    ulTask.appendChild(li);
+  });
 });
 
-const getAllLabels = await getLabels(tokenSheila);
-console.log(getAllLabels);
+
+// const getAllLabels = await getLabels(tokenSheila);
+// console.log(getAllLabels);
 
 // window.onload para testar os imports
 window.onload = async () => {
