@@ -1,3 +1,3 @@
-const taskP = document.querySelector('.act-task');
+const taskUl = document.querySelector('.act-task');
 const newLi = localStorage.getItem('task');
-taskP.innerHTML = newLi;
+taskUl.innerHTML = newLi;
