@@ -1,6 +1,6 @@
-import getTasks from './helpers/getTasks.js';
-import getOneTask from './helpers/getOneTask.js';
-import createNewTask from './helpers/createNewTask.js';
+import getTasks from '../helpers/getTasks.js';
+import getOneTask from '../helpers/getOneTask.js';
+import createNewTask from '../helpers/createNewTask.js';
 
 const tokenSheila = '934509d71c8b03ad32cc2d84eed7585ee2991228';
 
