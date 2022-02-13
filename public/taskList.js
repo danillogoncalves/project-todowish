@@ -4,7 +4,7 @@ import createNewTask from './helpers/createNewTask.js';
 
 const tokenSheila = '934509d71c8b03ad32cc2d84eed7585ee2991228';
 
-const buttonCassfy = document.querySelector('.classfy'); // botão capturar page2
+/* const buttonCassfy = document.querySelector('.classfy'); // botão capturar page2
 console.log(buttonCassfy);
 // cria a task
 buttonCassfy.addEventListener('click', () => {
@@ -12,8 +12,9 @@ buttonCassfy.addEventListener('click', () => {
   const task = taskCapture.value;
   createNewTask(tokenSheila, task);
 });
+ */
 
-console.log("este é o script.js");
+console.log("este é o taskList.js");
 window.onload = async () => {
   const tarefas = await getTasks(tokenSheila);
   console.log(tarefas);
@@ -21,5 +22,5 @@ window.onload = async () => {
   console.log(umaTarefa);
   const ul = document.querySelector('.tasks');
   console.log(ul);
-  console.log("este é o script.js");
+  console.log("este é o taskList.js");
 };
