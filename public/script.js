@@ -1,25 +1,26 @@
-import getTasks from './helpers/getTasks.js';
-import getOneTask from './helpers/getOneTask.js';
-import getProjects from './helpers/getProjects.js';
-import createNewTask from '/helpers/createNewTask.js';
-import deleteTasks from './helpers/deleteTask.js';
-import updateTask from './helpers/updateTask.js';
-import getLabels from './helpers/getLabels.js';
-import createLabel from './helpers/createLabel.js';
+import getTasks from '../helpers/getTasks.js';
+import getOneTask from '../helpers/getOneTask.js';
+import getProjects from '../helpers/getProjects.js';
+import createNewTask from '../helpers/createNewTask.js';
+import deleteTasks from '../helpers/deleteTask.js';
+import updateTask from '../helpers/updateTask.js';
+import getLabels from '../helpers/getLabels.js';
+import createLabel from '../helpers/createLabel.js';
 
 const buttonCapt = document.querySelector('.btn-capture'); // botão capturar page1
 const buttonCassfy = document.querySelector('.classfy'); // botão capturar page2
 
 const tokenAndre = '1dc766b8f69263dc80c4c56773deafbb8a534232';
 const tokenDanillo = 'a5a0ce723d7453794af29a0850bcde7ffbde7aa7';
+const tokenErik = '1f6d65f42bdc3c054ef50c71fbd8deeec3095e73';
 const tokenSheila = '934509d71c8b03ad32cc2d84eed7585ee2991228';
 
 // Script botão inicial
 buttonCapt.addEventListener('click', () => {
   // ocultar o page1
-  document.querySelector('.inicial-capture').id = 'page1';
+  document.querySelector('.inicial-capture').id = 'hide';
   // inserir page 2
-  document.querySelector('.capture-thing').classList.remove('page2');
+  document.querySelector('#capture-thing').classList.remove('hidden');
 })
 
 // cria a task
@@ -27,7 +28,7 @@ buttonCassfy.addEventListener('click', () => {
   const taskCapture = document.querySelector('.capture-text'); // textarea do capturar task
   const task = taskCapture.value;
   createNewTask(tokenDanillo, task);
-})
+});
 
 const labelNames = [
   { name: 'incubar', color: 30 },
