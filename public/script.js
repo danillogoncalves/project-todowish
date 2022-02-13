@@ -18,9 +18,9 @@ const tokenSheila = '934509d71c8b03ad32cc2d84eed7585ee2991228';
 // Script botão inicial
 buttonCapt.addEventListener('click', () => {
   // ocultar o page1
-  document.querySelector('.inicial-capture').id = 'page1';
+  document.querySelector('.inicial-capture').id = 'hide';
   // inserir page 2
-  document.querySelector('.capture-thing').classList.remove('page2');
+  document.querySelector('#capture-thing').classList.remove('hidden');
 })
 
 // cria a task
