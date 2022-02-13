@@ -4,9 +4,6 @@ import getOneTask from '../helpers/getOneTask.js';
 const tokenDanillo = 'c6de81bf5190fe4984d9817473cebac3cbfae44a';
 const tokenSheila = '934509d71c8b03ad32cc2d84eed7585ee2991228';
 
-export default function copiar(param) {
-  return (param);
-};
 
 function setId(id) {
   const task = getOneTask(tokenSheila, id).then((task) => copiar(task));
@@ -22,6 +19,7 @@ getTasks(tokenSheila).then((response) => {
     const link = document.createElement('a');
     link.href = '/firstAct';
     li.innerHTML = content;
+    li.id = id
     link.appendChild(li);
     li.addEventListener('click', () => setId(id));
     ulTask.appendChild(link);
