@@ -23,6 +23,7 @@ app.get('/agendar', (req, res) => res.render('processar/agendar'));
 app.get('/delegate', (req, res) => res.render('processar/delegate'));
 app.get('/now', (req, res) => res.render('processar/now'));
 
+
 /* rotas execute */
 app.get('/eMain', (req, res) => res.render('executar/eMain'));
 app.get('/eDelegate', (req, res) => res.render('executar/eDelegate'));
