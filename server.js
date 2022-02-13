@@ -21,6 +21,8 @@ app.get('/not', (req, res) => res.render('processar/not'));
 app.get('/yes', (req, res) => res.render('processar/yes'));
 app.get('/agendar', (req, res) => res.render('processar/agendar'));
 app.get('/delegate', (req, res) => res.render('processar/delegate'));
+app.get('/now', (req, res) => res.render('processar/now'));
+
 
 /* rotas execute */
 app.get('/eMain', (req, res) => res.render('executar/eMain'));

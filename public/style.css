@@ -19,6 +19,8 @@
   --process-gray4: #f2f2f2;
   --process-yellow: #ffeb3b;
   --process-magenta: #673ab7;
+
+  --color-blue-1: #4963be;
 }
 
 body {
@@ -200,7 +202,7 @@ main {
 
 /* =====> button sim e não <====== */
 
-.bnt-container {
+/* .bnt-container {
   display: flex;
   justify-content: space-between;
   margin: 50px;
@@ -215,7 +217,7 @@ main {
   font-size: 1.2rem;
   font-weight: 500;
   color: white;
-}
+} */
 
 /* =====> Fim button sim e não <====== */
 
@@ -233,9 +235,45 @@ main {
 
 /* =====> Delegate <====== */
 
+
+/* =====> Inicio firstAct <====== */
+
+.first-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first-action p {
+  font-size: 1.8rem;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 50px;
+
+}
+
+.container-btn button {
+  border: none;
+  border-radius: 16px;
+  background: var(--color-blue-1);
+  width: 150px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+}
+
+/* =====> Fim firstAct <====== */
+
+
 .container-delegate img{
   width: 70px;
 }
+
 /* =====> Footer <====== */
 .logo {
   position: absolute;
@@ -246,3 +284,5 @@ main {
   text-align: center;
   font-size: 20px;
 }
+
+
