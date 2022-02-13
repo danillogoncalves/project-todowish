@@ -16,11 +16,11 @@ app.get('/thingCap', (req, res) => res.render('thingCap'));
 /* rotas modal */
 /* rotas process */
 app.get('/firstAct', (req, res) => res.render('processar/firstAct'));
-app.get('/nextAct', (req, res) => res.render('processar/thingCap'));
-app.get('/not', (req, res) => res.render('processar/thingCap'));
-app.get('/yes', (req, res) => res.render('processar/thingCap'));
-app.get('/agendar', (req, res) => res.render('processar/thingCap'));
-app.get('/delegate', (req, res) => res.render('processar/thingCap'));
+app.get('/nextAct', (req, res) => res.render('processar/nextAct'));
+app.get('/not', (req, res) => res.render('processar/not'));
+app.get('/yes', (req, res) => res.render('processar/yes'));
+app.get('/agendar', (req, res) => res.render('processar/agendar'));
+app.get('/delegate', (req, res) => res.render('processar/delegate'));
 
 /* rotas execute */
 app.get('/eMain', (req, res) => res.render('executar/eMain'));

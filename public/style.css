@@ -219,12 +219,23 @@ main {
 
 /* =====> Fim button sim e não <====== */
 
-/* =====> button option não <====== */
+/* =====> eHome <====== */
 
-/* .not-action {
+.eHome-header {
+  height: 70px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.eHome-header img {
+  width: 70px;
+}
 
-} */
+/* =====> Delegate <====== */
 
+.container-delegate img{
+  width: 70px;
+}
 /* =====> Footer <====== */
 .logo {
   position: absolute;
