@@ -39,7 +39,6 @@ form {
 /* CONTROLE DE PAGE/SECTION */
 
 .container {
-  position: relative;
   width: 100%;
   height: 100%;
   
@@ -76,13 +75,13 @@ form {
   display: none;
 }
 
-.capture-container h2{
+.container h2{
     padding: 0px;
     margin: auto 0px 30px 0px;
     opacity: 50%;
 }
 
-.capture-container .btn-capture {
+.container .btn-capture {
     margin: 0px 0px auto 0px;
     width: 321px;
     height: 133px;
@@ -99,7 +98,7 @@ form {
     cursor: pointer;
 }
 
-.capture-container .btn-capture:hover {
+.container .btn-capture:hover {
     margin: 0px 0px auto 0px;
     width: 321px;
     height: 133px;
@@ -116,7 +115,7 @@ form {
     cursor: pointer;
 }
 
-#form-capture {
+.capture-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,7 +123,7 @@ form {
   margin: 100px;
 }
 
-#form-capture .btn-capture{
+.capture-text .btn-capture{
   margin: 50px;
 }
 
@@ -173,13 +172,11 @@ form {
   background-color:  var(--process-yellow);
   color: var(--process-gray1);
   }
-  
-  
+    
   .process-is-action{
   
   }
-  
-  
+    
   .logo {
   width: 100%;
   height: 100px;
