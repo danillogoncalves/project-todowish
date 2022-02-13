@@ -28,8 +28,13 @@ const labelNames = [
 
 // criando todas as labels
 labelNames.forEach(({ name, color }) => {
-  createLabel(tokenDanillo, name, color);
+  createLabel(tokenSheila, name, color);
 });
+
+// armazenando os ids e nomes das labels
+const labelInfo = await getLabels(tokenSheila)
+  .then((labels) => labels.map((label) => ({ id: label.id, name: label.name }))); 
+  console.log(labelInfo[0].id);
 
 // Script botão inicial
 buttonCapt.addEventListener('click', () => {
@@ -43,14 +48,16 @@ buttonCapt.addEventListener('click', () => {
 buttonCassfy.addEventListener('click', () => {
   const taskCapture = document.querySelector('.capture-text'); // textarea do capturar task
   const task = taskCapture.value;
-  createNewTask(tokenDanillo, task);
+  createNewTask(tokenSheila, task);
 });
 
 const setId = (id) => {
+  getOneTask(tokenSheila, id).then((task) => console.log(task.label_ids));
+  getLabels(tokenSheila).then((label) => label.forEach((elem) => console.log(elem.id, elem.name)));
   return id;
 };
 
-getTasks(tokenDanillo).then((response) => {
+getTasks(tokenSheila).then((response) => {
   const ulTask = document.querySelector('#tasks-to-process');
   response.forEach(({ content, id }) => {
     const li = document.createElement('li');
@@ -59,6 +66,8 @@ getTasks(tokenDanillo).then((response) => {
     ulTask.appendChild(li);
   });
 });
+
+
 
 
 // const getAllLabels = await getLabels(tokenSheila);
