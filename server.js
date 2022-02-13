@@ -28,6 +28,7 @@ app.get('/now', (req, res) => res.render('processar/now'));
 app.get('/eMain', (req, res) => res.render('executar/eMain'));
 app.get('/eDelegate', (req, res) => res.render('executar/eDelegate'));
 app.get('/eSchedule', (req, res) => res.render('executar/eSchedule'));
+app.get('/eSchedule', (req, res) => res.render('executar/eSchedule'));
 app.get('/eHome', (req, res) => res.render('executar/eHome'));
 app.get('/eJob', (req, res) => res.render('executar/eJob'));
 app.get('/eStreet', (req, res) => res.render('executar/eStreet'));

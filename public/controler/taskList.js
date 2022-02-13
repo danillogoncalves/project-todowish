@@ -15,7 +15,8 @@ getTasks(tokenSheila).then((response) => {
   .forEach(({ content, id }) => {
     const li = document.createElement('li');
     li.innerHTML = content;
-    li.addEventListener('click', () => setId(id));
+    li.id = id
+    // li.addEventListener('click', () => setId(id));
     ulTask.appendChild(li);
   });
 }); 
