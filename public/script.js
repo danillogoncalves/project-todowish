@@ -35,6 +35,7 @@ labelNames.forEach(({ name, color }) => {
 const labelInfo = await getLabels(tokenSheila)
   .then((labels) => labels.map((label) => ({ id: label.id, name: label.name }))); 
   console.log(labelInfo[0].id);
+  
 
 // Script botão inicial
 buttonCapt.addEventListener('click', () => {
