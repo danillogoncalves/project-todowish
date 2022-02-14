@@ -17,7 +17,7 @@ const labelTask = async (event) => {
   const task = document.querySelector('.act-task').firstChild;
   updateTaskLabel(tokenDanillo, task.innerText, task.id, id);
   if (event.target.className === 'próxima_ação') {
-    location.href = '/eHome';
+    location.href = '/nextAct';
   } else {
     location.href = '/home';
   }
