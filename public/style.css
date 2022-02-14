@@ -364,6 +364,7 @@ input:nth-child(2) {
 
 /* =====> fim do agendar <====== */
 
+
 /* =====> delegate <====== */
 
 .container-delegate {
@@ -407,6 +408,7 @@ input:nth-child(2) {
 
 /* =====> Fim nextAct <====== */
 
+
 /* =====> Inicio firstAct <====== */
 
 .first-action {
@@ -441,8 +443,24 @@ input:nth-child(2) {
 
 
 
-
 /* =====> Inicio NexAct <====== */
+
+/* =====> eMain <====== */
+
+.execute-main {
+  width: 90%;
+  height: 380px;
+  display: flex;
+  align-items: center;
+}
+
+.execute-main .container-btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* =====> Fim do Emain <====== */
+
 
 /* =====> Footer <====== */
 .logo {
