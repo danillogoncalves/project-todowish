@@ -6,28 +6,18 @@ const tokenSheila = '781f034d92276ce1e67bd20bf7222eb8badeea91';
 const tokenErik = '7838490470f3e27a7e6037026106d47f12d05b89';
 const tokenAndre = 'd8e916333409c64935c6ab17c3d5127f31f8649f';
 
-const buttonDoItNow = document.querySelector('.fazer_agora');
-const buttonToDelegate = document.querySelector('.delegar');
-const buttonNextAction = document.querySelector('.próxima_ação');
-const buttonToSchedule= document.querySelector('.agendar');
+const buttonHome = document.querySelector('.casa');
+const buttonWork = document.querySelector('.trabalho');
+const buttonStreet = document.querySelector('.rua');
 
 const labelTask = async (event) => {
   const labels = await getLabels(tokenSheila);
   const { id } = labels.find((label) => event.target.className === label.name);
   const task = document.querySelector('.act-task').firstChild;
   updateTaskLabel(tokenSheila, task.innerText, task.id, id);
-  if (event.target.className === 'próxima_ação') {
-    location.href = '/eHome';
-  } else {
     location.href = '/home';
-  }
 };
 
-const directTo = () => {
-  location.href = '/now';
-};
-
-buttonDoItNow.addEventListener('click', directTo);
-buttonToDelegate.addEventListener('click', labelTask);
-buttonNextAction.addEventListener('click', labelTask);
-buttonToSchedule.addEventListener('click', labelTask);
+buttonHome.addEventListener('click', labelTask);
+buttonWork.addEventListener('click', labelTask);
+buttonStreet.addEventListener('click', labelTask);
