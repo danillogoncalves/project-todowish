@@ -56,6 +56,32 @@ main {
   margin: auto;
 }
 
+/* =====> header <====== */
+
+.header {
+  margin: auto;
+  height: 90px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.header img {
+  width: 50px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.eDelegate-header h1{
+  margin: auto;
+}
 
 a {
   text-decoration: none;
@@ -270,19 +296,7 @@ input:nth-child(2) {
 
 
 
-/* =====> eHome <====== */
-
-.eHome-header {
-  height: 70px;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-}
-.eHome-header img {
-  width: 70px;
-}
-
-/* =====> fim do eHome <====== */
+/* =====> Delegate <====== */
 
 
 
@@ -319,7 +333,6 @@ input:nth-child(2) {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .not-action .container-btn {
@@ -418,10 +431,8 @@ input:nth-child(2) {
 
 /* =====> Footer <====== */
 .logo {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  margin: 80vh auto 0px auto;
+  width: 80%;
   height: 60px;
   text-align: center;
   font-size: 20px;
