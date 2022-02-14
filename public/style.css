@@ -409,6 +409,10 @@ input:nth-child(2) {
 /* =====> Fim nextAct <====== */
 
 
+
+
+
+
 /* =====> Inicio firstAct <====== */
 
 .first-action {
@@ -439,11 +443,10 @@ input:nth-child(2) {
 
 /* =====> Fim firstAct <====== */
 
-/* =====> Inicio NexAct <====== */
 
 
 
-/* =====> Inicio NexAct <====== */
+
 
 /* =====> eMain <====== */
 
@@ -460,6 +463,10 @@ input:nth-child(2) {
 }
 
 /* =====> Fim do Emain <====== */
+
+
+
+
 
 
 /* =====> Eschedule <====== */
@@ -494,7 +501,9 @@ input:nth-child(2) {
 
 
 
-/* =====> Eschedule <====== */
+
+
+/* =====> EscheduleWeek <====== */
 
 .eScheduleWeek {
   width: 100%;
@@ -521,11 +530,14 @@ input:nth-child(2) {
   color: var(--offwhite2);
 }
 
-/* =====> Fim do Eschedule <====== */
+/* =====> Fim do EscheduleWeek <====== */
 
 
 
-/* =====> Eschedule <====== */
+
+
+
+/* =====> Edelegate <====== */
 
 .eDelegate {
   width: 100%;
@@ -552,7 +564,115 @@ input:nth-child(2) {
   color: var(--offwhite2);
 }
 
-/* =====> Fim do Eschedule <====== */
+/* =====> Fim do Edelegate <====== */
+
+
+
+
+
+
+/* =====> Ejob <====== */
+
+.ejob {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.ejob li {
+  display: flex;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: var(--offwhite2);
+  color: var(--gray3);
+  height: 80px;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  border: solid 2px var(--blue3);
+}
+
+.ejob li:hover {
+  background-color: var(--blue3);
+  color: var(--offwhite2);
+}
+
+/* =====> Fim do Ejob <====== */
+
+
+
+
+
+
+
+/* =====> EHome <====== */
+
+.eHome {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.eHome li {
+  display: flex;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: var(--offwhite2);
+  color: var(--gray3);
+  height: 80px;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  border: solid 2px var(--blue3);
+}
+
+.eHome li:hover {
+  background-color: var(--blue3);
+  color: var(--offwhite2);
+}
+
+/* =====> Fim do EHome <====== */
+
+
+
+
+
+
+/* =====> EStreet <====== */
+
+.eStreet {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.eStreet li {
+  display: flex;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: var(--offwhite2);
+  color: var(--gray3);
+  height: 80px;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  border: solid 2px var(--blue3);
+}
+
+.eStreet li:hover {
+  background-color: var(--blue3);
+  color: var(--offwhite2);
+}
+
+/* =====> Fim do EStreet <====== */
+
+
+
+
+
 
 
 /* =====> Footer <====== */
