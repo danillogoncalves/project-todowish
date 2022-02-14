@@ -9,7 +9,7 @@ const button = document.querySelector('.classfy');
 const input = document.querySelector('#capture')
 
 button.addEventListener('click', async () => {
-  await createNewTask(tokenDanillo, input.value);
+  await createNewTask(tokenSheila, input.value);
   location.href = '/home';
 });
 

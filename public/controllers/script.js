@@ -22,5 +22,5 @@ const labelNames = [
 ];
 
 labelNames.forEach(({ name, color }) => {
-  createLabel(tokenDanillo, name, color);
+  createLabel(tokenSheila, name, color);
 });
