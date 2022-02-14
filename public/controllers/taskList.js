@@ -1,17 +1,4 @@
 import getTasks from '../helpers/getTasks.js';
-import getOneTask from '../helpers/getOneTask.js';
-
-const tokenDanillo = 'c6de81bf5190fe4984d9817473cebac3cbfae44a';
-const tokenSheila = '934509d71c8b03ad32cc2d84eed7585ee2991228';
-const obj = []
-
-function setId(event) {
-  obj.push(event.target)
-};
-
-console.log(obj)
-
-getTasks(tokenSheila).then((response) => {}
 // import getOneTask from '../helpers/getOneTask.js';
 
 const tokenDanillo = 'c6de81bf5190fe4984d9817473cebac3cbfae44a';
@@ -34,4 +21,4 @@ getTasks(tokenDanillo).then((response) => {
     li.addEventListener('click', setId);
     ulTask.appendChild(link);
   });
-})
+}); 
