@@ -1,5 +1,5 @@
 import getTasks from '../helpers/getTasks.js';
-import getLabels from '../helpers/getLabels';
+import getLabels from '../helpers/getLabels.js';
 // import getOneTask from '../helpers/getOneTask.js';
 
 const tokenDanillo = 'c6de81bf5190fe4984d9817473cebac3cbfae44a';
@@ -11,10 +11,15 @@ const setId = (event) => {
   localStorage.setItem('task', event.target.parentNode.innerHTML);
 }
 
+const labelInfo = await getLabels(tokenSheila)
+.then((labels) => labels.map((label) => ({ id: label.id, name: label.name }))); 
+console.log(labelInfo);  
 
 getTasks(tokenDanillo).then((response) => {
   const ulTask = document.querySelector('.eSchedule');
-  response.forEach(({ content, id }) => {
+  const { id } = labelInfo.find((label) => label.name === 'agendar');
+  response.filter((task) => task.label_ids.includes(id))
+    .forEach(({ content, id }) => {
     const li = document.createElement('li');
     const link = document.createElement('a');
     link.href = '/firstAct';
@@ -25,8 +30,3 @@ getTasks(tokenDanillo).then((response) => {
     ulTask.appendChild(link);
   });
 }); 
-// precisa pegar a lista de labels para ver o id do agendar e fazer o filtro para imprimir a lista de tarefas filtradas
-/* getLabels(tokenSheila).then((response) => {
-  console.log(response);
-})
- */
