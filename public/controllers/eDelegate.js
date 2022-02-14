@@ -16,8 +16,8 @@ const labelInfo = await getLabels(tokenSheila)
 .then((labels) => labels.map((label) => ({ id: label.id, name: label.name }))); 
 
 getTasks(tokenSheila).then((response) => {
-  const ulTask = document.querySelector('.eHome');
-  const { id } = labelInfo.find((label) => label.name === 'casa');
+  const ulTask = document.querySelector('.eDelegate');
+  const { id } = labelInfo.find((label) => label.name === 'delegar');
   response.filter((task) => task.label_ids.includes(id))
     .forEach(({ content, id }) => {
     const li = document.createElement('li');
