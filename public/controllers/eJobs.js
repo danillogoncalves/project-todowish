@@ -1,5 +1,4 @@
 import getTasks from '../helpers/getTasks.js';
-// import getOneTask from '../helpers/getOneTask.js';
 
 const tokenDanillo = 'c6de81bf5190fe4984d9817473cebac3cbfae44a';
 const tokenSheila = '781f034d92276ce1e67bd20bf7222eb8badeea91';
@@ -10,7 +9,7 @@ const setId = (event) => {
   localStorage.setItem('task', event.target.parentNode.innerHTML);
 }
 
-getTasks(tokenDanillo).then((response) => {
+getTasks(tokenSheila).then((response) => {
   const ulTask = document.querySelector('.ejob');
   response.forEach(({ content, id }) => {
     const li = document.createElement('li');

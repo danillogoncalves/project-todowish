@@ -1,5 +1,5 @@
 import getLabels from '../helpers/getLabels.js';
-import updateTaskLabel from '../helpers/updateTaskLabel.js';
+import addLabel from '../helpers/addLabel.js';
 
 const tokenDanillo = 'c6de81bf5190fe4984d9817473cebac3cbfae44a';
 const tokenSheila = '781f034d92276ce1e67bd20bf7222eb8badeea91';
@@ -12,10 +12,10 @@ const buttonNextAction = document.querySelector('.próxima_ação');
 const buttonToSchedule= document.querySelector('.agendar');
 
 const labelTask = async (event) => {
-  const labels = await getLabels(tokenDanillo);
+  const labels = await getLabels(tokenSheila);
   const { id } = labels.find((label) => event.target.className === label.name);
   const task = document.querySelector('.act-task').firstChild;
-  updateTaskLabel(tokenDanillo, task.innerText, task.id, id);
+  await addLabel(tokenSheila, task.innerText, task.id, id);
   if (event.target.className === 'próxima_ação') {
     location.href = '/nextAct';
   } else {

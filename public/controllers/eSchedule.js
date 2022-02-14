@@ -1,6 +1,5 @@
 import getTasks from '../helpers/getTasks.js';
 import getLabels from '../helpers/getLabels.js';
-// import getOneTask from '../helpers/getOneTask.js';
 
 const tokenDanillo = 'c6de81bf5190fe4984d9817473cebac3cbfae44a';
 const tokenSheila = '781f034d92276ce1e67bd20bf7222eb8badeea91';
@@ -13,9 +12,8 @@ const setId = (event) => {
 
 const labelInfo = await getLabels(tokenDanillo)
 .then((labels) => labels.map((label) => ({ id: label.id, name: label.name }))); 
-console.log(labelInfo);  
 
-getTasks(tokenDanillo).then((response) => {
+getTasks(tokenSheila).then((response) => {
   const ulTask = document.querySelector('.eSchedule');
   const { id } = labelInfo.find((label) => label.name === 'agendar');
   response.filter((task) => task.label_ids.includes(id))
