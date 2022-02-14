@@ -6,7 +6,7 @@
 }
 
 :root {
-  --background--page: #f4eee6;
+  /* --background--page: #f4eee6;
   --background--textarea: #e5e5e5;
   --button-green: #62dc79;
   --button-green1: #0ea52e;
@@ -20,38 +20,45 @@
   --process-yellow: #ffeb3b;
   --process-magenta: #673ab7;
 
-  --color-blue-1: #4963be;
+  --color-blue-1: #4963be; */
 
 
-/* Color Theme Adobe */
+/* Color Themes */
+
+  /* CORES ATIVAS */
   --blue1: #4963be;
   --blue2: #2E6FF2;
   --blue3: #54ACBF;
   --orange: #F27D16;
 
+  /* TONS DE CINZA */
   --gray4: #191919;
   --gray3: #494846;
   --gray1: #5e5e5e;
   --gray2: #bebebe;
 
+  /* TONS OFFWHITE */
   --offwhite: #F2F2F2;
   --offwhite2:#e5e5e5;
 }
 
 
+/* ELEMENTOS */
+
 body {
   background: var(--offwhite);
 }
 
-a {
-  text-decoration: none;
-}
 
-/* ELEMENTOS */
 main {
   width: 90%;
   height: 100vh;
   margin: auto;
+}
+
+
+a {
+  text-decoration: none;
 }
 
 /* ======> CONTROLE DE PAGE/SECTION <====== */
@@ -127,7 +134,11 @@ main {
   margin: 100px;
 }
 
+
+
+
 /* =====> inicial-capture <====== */
+
 .capture-text .btn-capture {
   margin: 50px;
 }
@@ -144,6 +155,7 @@ main {
   resize: none;
   border: solid 2px var(--blue3);
 }
+
 /* =====> finish inicial-capture <====== */
 
 
@@ -151,6 +163,7 @@ main {
 
 
 /* =====> process-main <====== */
+
 .process-main {
   padding: 100px;
   display: flex;
@@ -189,14 +202,13 @@ main {
   background-color: var(--blue3);
   color: var(--offwhite2);
 }
+
 /* =====> finish process-main <====== */
 
 
 
-
-
-
 /* =====> Modal config <====== */
+
 .modal-background {
   position: absolute;
   margin: auto;
@@ -216,7 +228,8 @@ main {
 .modal li {
   display: block;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
+  border: solid 2px var(--blue1) ;
   padding: 10px 5px;
   background-color: var(--offwhite2);
   text-align: center;
@@ -241,6 +254,8 @@ main {
 /* =====> finish modal config <====== */
 
 
+
+
 /* =====> eHome <====== */
 
 .eHome-header {
@@ -253,7 +268,27 @@ main {
   width: 70px;
 }
 
-/* =====> Delegate <====== */
+/* =====> fim do eHome <====== */
+
+
+
+/* =====> not <====== */
+
+.not-action {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.not-action .container-btn {
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* =====> fim do not <====== */
+
+
 
 
 /* =====> Inicio firstAct <====== */
@@ -284,6 +319,9 @@ main {
 }
 
 /* =====> Fim firstAct <====== */
+
+
+
 
 
 .container-delegate img{
