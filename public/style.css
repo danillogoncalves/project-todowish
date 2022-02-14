@@ -72,6 +72,10 @@ main {
   width: 50px;
 }
 
+.header button {
+  border: none;
+}
+
 .img-container {
   display: flex;
   flex-direction: row;
@@ -173,9 +177,6 @@ input:nth-child(2) {
   margin: 100px;
 }
 
-
-
-
 /* =====> inicial-capture <====== */
 
 .capture-text .btn-capture {
@@ -196,10 +197,6 @@ input:nth-child(2) {
 }
 
 /* =====> finish inicial-capture <====== */
-
-
-
-
 
 /* =====> process-main <====== */
 
@@ -244,9 +241,6 @@ input:nth-child(2) {
 
 /* =====> finish process-main <====== */
 
-
-
-
 /* =====> Modal config <====== */
 
 .modal-background {
@@ -255,7 +249,6 @@ input:nth-child(2) {
   width: 90%;
   height: 100vh;
 }
-
 
 .modal {
   background: var(--blue3);
@@ -293,9 +286,6 @@ input:nth-child(2) {
 
 /* =====> finish modal config <====== */
 
-
-
-
 /* =====> now <====== */
 
 .container-label p {
@@ -311,8 +301,6 @@ input:nth-child(2) {
 }
 
 /* =====> fim do now <====== */
-
-
 
 /* =====> not <====== */
 
@@ -336,9 +324,6 @@ input:nth-child(2) {
 
 /* =====> fim do not <====== */
 
-
-
-
 /* =====> Yes <====== */
 
 .yes-container {
@@ -357,10 +342,6 @@ input:nth-child(2) {
 }
 
 /* =====> fim do Yes <====== */
-
-
-
-
 
 /* =====> agendar <====== */
 
@@ -382,9 +363,6 @@ input:nth-child(2) {
 }
 
 /* =====> fim do agendar <====== */
-
-
-
 
 
 /* =====> delegate <====== */
@@ -411,9 +389,6 @@ input:nth-child(2) {
 
 /* =====> fim do delegate <====== */
 
-
-
-
 /* =====> Inicio nextAct <====== */
 
 .container-nextAct {
@@ -432,7 +407,6 @@ input:nth-child(2) {
 }
 
 /* =====> Fim nextAct <====== */
-
 
 
 /* =====> Inicio firstAct <====== */
@@ -465,6 +439,11 @@ input:nth-child(2) {
 
 /* =====> Fim firstAct <====== */
 
+/* =====> Inicio NexAct <====== */
+
+
+
+/* =====> Inicio NexAct <====== */
 
 /* =====> eMain <====== */
 
@@ -481,8 +460,6 @@ input:nth-child(2) {
 }
 
 /* =====> Fim do Emain <====== */
-
-
 
 
 /* =====> Eschedule <====== */
@@ -576,8 +553,6 @@ input:nth-child(2) {
 }
 
 /* =====> Fim do Eschedule <====== */
-
-
 
 
 /* =====> Footer <====== */
