@@ -8,7 +8,7 @@ const tokenErik = '7838490470f3e27a7e6037026106d47f12d05b89';
 
 const finishTask = async () => {
   const task = document.querySelector('.act-task').firstChild;
-  await deleteTask(task.id, tokenSheila); 
+  await deleteTask(task.id, tokenDanillo); 
   location.href = '/home';
 };
 
