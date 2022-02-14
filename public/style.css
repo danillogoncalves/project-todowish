@@ -311,31 +311,6 @@ input:nth-child(2) {
 
 
 
-/* =====> not <====== */
-
-.not-action {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-.not-action .container-btn {
-  width: 100%;
-  justify-content: space-between;
-}
-
-.act-task {
-  margin-bottom: 40px;
-}
-
-/* =====> fim do not <====== */
-
-
-
-
 /* =====> Yes <====== */
 
 .yes-container {
@@ -354,6 +329,8 @@ input:nth-child(2) {
 }
 
 /* =====> fim do Yes <====== */
+
+
 
 
 
