@@ -11,3 +11,7 @@ export default async function createLabel(token, name, number) {
   const response = await fetch(url, requestInfo);
   return response;
 };
+
+export {
+  createLabel
+};

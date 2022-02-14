@@ -1,13 +1,13 @@
-export default async function createLabel(token, name, number) {
+export default async function updateTaskLabel(token, task, taskId, labelId) {
   const requestInfo = {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${token}`,
     },
-    body: `{"name": "${name}", "color": "${number}"}`,
+    body: `{"content": "${task}", "label_ids": ["${labelId}"]}`,
   };
-  const url = 'https://api.todoist.com/rest/v1/labels';
+  const url = `https://api.todoist.com/rest/v1/tasks/${taskId}`;
   const response = await fetch(url, requestInfo);
   return response;
 };
