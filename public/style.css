@@ -325,8 +325,6 @@ input:nth-child(2) {
 
 
 
-<<<<<<< HEAD
-=======
 /* =====> not <====== */
 
 .not-action {
@@ -351,7 +349,6 @@ input:nth-child(2) {
 
 
 
->>>>>>> 7ebce8fe5b8df8d060036ab140da5d953f1ce805
 /* =====> Yes <====== */
 
 .yes-container {
@@ -436,8 +433,9 @@ input:nth-child(2) {
 
 /* =====> Footer <====== */
 .logo {
-  margin: 80vh auto 0px auto;
-  width: 80%;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
   height: 60px;
   text-align: center;
   font-size: 20px;
