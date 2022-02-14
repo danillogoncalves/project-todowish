@@ -10,10 +10,10 @@ const taskUl = document.querySelector('.act-task');
 const newLi = localStorage.getItem('task');
 taskUl.innerHTML = newLi;
 
-
-const buttonTrash = document.querySelector('.trash');
-const buttonIncubate = document.querySelector('.incubar');
-const buttonReference = document.querySelector('.referencia');
+const buttonDoItNow = document.querySelector('.fazer_agora');
+const buttonToDelegate = document.querySelector('.delegar');
+const buttonNextAction = document.querySelector('.próxima_ação');
+const buttonToSchedule= document.querySelector('.agendar');
 
 const labels = getLabels(tokenDanillo);
 labels.then(listsLabel => console.log(listsLabel));
@@ -30,12 +30,11 @@ const labelTask = async (event) => {
   location.href = '/home';
 };
 
-const deleteTaskClick = async () => {
-  const task = document.querySelector('.act-task').firstChild;
-  await deleteTask(task.id, tokenDanillo);
-  location.href = '/home';
+const directTo = () => {
+  location.href = '/now';
 };
 
-buttonTrash.addEventListener('click', deleteTaskClick);
-buttonIncubate.addEventListener('click', labelTask);
-buttonReference.addEventListener('click', labelTask);
+buttonDoItNow.addEventListener('click', directTo);
+buttonToDelegate.addEventListener('click', labelTask);
+buttonNextAction.addEventListener('click', labelTask);
+buttonToSchedule.addEventListener('click', labelTask);
