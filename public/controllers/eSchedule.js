@@ -11,7 +11,7 @@ const setId = (event) => {
   localStorage.setItem('task', event.target.parentNode.innerHTML);
 }
 
-const labelInfo = await getLabels(tokenSheila)
+const labelInfo = await getLabels(tokenDanillo)
 .then((labels) => labels.map((label) => ({ id: label.id, name: label.name }))); 
 console.log(labelInfo);  
 
