@@ -16,7 +16,7 @@ const labelInfo = await getLabels(tokenDanillo)
 .then((labels) => labels.map((label) => ({ id: label.id, name: label.name }))); 
 
 getTasks(tokenDanillo).then((response) => {
-  const ulTask = document.querySelector('.ejob');
+  const ulTask = document.querySelector('.eJob');
   const { id } = labelInfo.find((label) => label.name === 'trabalho');
   response.filter((task) => task.label_ids.includes(id))
     .forEach(({ content, id }) => {
