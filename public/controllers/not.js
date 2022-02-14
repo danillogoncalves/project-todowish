@@ -14,16 +14,16 @@ const buttonIncubate = document.querySelector('.incubar');
 const buttonReference = document.querySelector('.referencia');
 
 const labelTask = async (event) => {
-  const labels = await getLabels(tokenSheila);
+  const labels = await getLabels(tokenDanillo);
   const { id } = labels.find((label) => event.target.className === label.name);
   const task = document.querySelector('.act-task').firstChild;
-  await addLabel(tokenSheila, task.innerText, task.id, id);
+  await addLabel(tokenDanillo, task.innerText, task.id, id);
   location.href = '/home';
 };
 
 const deleteTaskClick = async () => {
   const task = document.querySelector('.act-task').firstChild;
-  await deleteTask(task.id, tokenSheila);
+  await deleteTask(task.id, tokenDanillo);
   location.href = '/home';
 };
 

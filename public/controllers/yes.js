@@ -12,10 +12,10 @@ const buttonNextAction = document.querySelector('.próxima_ação');
 const buttonToSchedule= document.querySelector('.agendar');
 
 const labelTask = async (event) => {
-  const labels = await getLabels(tokenSheila);
+  const labels = await getLabels(tokenDanillo);
   const { id } = labels.find((label) => event.target.className === label.name);
   const task = document.querySelector('.act-task').firstChild;
-  await addLabel(tokenSheila, task.innerText, task.id, id);
+  await addLabel(tokenDanillo, task.innerText, task.id, id);
   if (event.target.className === 'próxima_ação') {
     location.href = '/nextAct';
   } else {
