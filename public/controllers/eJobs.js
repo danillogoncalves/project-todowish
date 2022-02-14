@@ -8,14 +8,14 @@ const tokenAndre = '1dc766b8f69263dc80c4c56773deafbb8a534232';
 const tokenErik = '7838490470f3e27a7e6037026106d47f12d05b89';
 
 const deleteTaskClick = async (event) => {
-  await deleteTask(event.target.id, tokenSheila);
+  await deleteTask(event.target.id, tokenDanillo);
   location.href = '/home';
 };
 
-const labelInfo = await getLabels(tokenSheila)
+const labelInfo = await getLabels(tokenDanillo)
 .then((labels) => labels.map((label) => ({ id: label.id, name: label.name }))); 
 
-getTasks(tokenSheila).then((response) => {
+getTasks(tokenDanillo).then((response) => {
   const ulTask = document.querySelector('.ejob');
   const { id } = labelInfo.find((label) => label.name === 'trabalho');
   response.filter((task) => task.label_ids.includes(id))

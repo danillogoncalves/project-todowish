@@ -1,4 +1,4 @@
-export async function createLabel(token, name, number) {
+export default async function createLabel(token, name, number) {
   const requestInfo = {
     method: 'POST',
     headers: {

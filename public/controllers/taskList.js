@@ -9,7 +9,7 @@ const setId = (event) => {
   localStorage.setItem('task', event.target.parentNode.innerHTML);
 }
 
-getTasks(tokenSheila).then((response) => {
+getTasks(tokenDanillo).then((response) => {
   const ulTask = document.querySelector('.tasks');
   response.filter((label) => label.label_ids.length === 0)
   .forEach(({ content, id }) => {
