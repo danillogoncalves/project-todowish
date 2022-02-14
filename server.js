@@ -8,8 +8,8 @@ app.set('view engine', 'ejs');
 
 /* Rotas principais */
 
-app.get('/', (req, res) => res.render('initialCap'));
-app.get('/home', (req, res) => res.render('home'));
+app.get('/', (req, res) => res.render('home'));
+app.get('/initialCap', (req, res) => res.render('initialCap'));
 app.get('/taskList', (req, res) => res.render('taskList'));
 app.get('/thingCap', (req, res) => res.render('thingCap'));
 
