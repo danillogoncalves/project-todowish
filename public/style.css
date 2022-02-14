@@ -333,7 +333,6 @@ input:nth-child(2) {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .not-action .container-btn {
