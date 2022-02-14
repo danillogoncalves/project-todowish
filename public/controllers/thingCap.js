@@ -8,5 +8,8 @@ const tokenAndre = 'd8e916333409c64935c6ab17c3d5127f31f8649f';
 const button = document.querySelector('.classfy');
 const input = document.querySelector('#capture')
 
-button.addEventListener('click', async () => await createNewTask(tokenSheila, input.value));
+button.addEventListener('click', async () => {
+  await createNewTask(tokenDanillo, input.value);
+  location.href = '/home';
+});
 

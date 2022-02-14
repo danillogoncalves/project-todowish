@@ -11,10 +11,10 @@ const buttonWork = document.querySelector('.trabalho');
 const buttonStreet = document.querySelector('.rua');
 
 const labelTask = async (event) => {
-  const labels = await getLabels(tokenSheila);
+  const labels = await getLabels(tokenDanillo);
   const { id } = labels.find((label) => event.target.className === label.name);
   const task = document.querySelector('.act-task').firstChild;
-  updateTaskLabel(tokenSheila, task.innerText, task.id, id);
+  updateTaskLabel(tokenDanillo, task.innerText, task.id, id);
     location.href = '/home';
 };
 
