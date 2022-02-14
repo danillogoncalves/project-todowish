@@ -325,6 +325,8 @@ input:nth-child(2) {
 
 
 
+<<<<<<< HEAD
+=======
 /* =====> not <====== */
 
 .not-action {
@@ -349,6 +351,7 @@ input:nth-child(2) {
 
 
 
+>>>>>>> 7ebce8fe5b8df8d060036ab140da5d953f1ce805
 /* =====> Yes <====== */
 
 .yes-container {
@@ -367,6 +370,8 @@ input:nth-child(2) {
 }
 
 /* =====> fim do Yes <====== */
+
+
 
 
 
