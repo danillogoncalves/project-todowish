@@ -386,6 +386,7 @@ input:nth-child(2) {
 
 
 
+
 /* =====> delegate <====== */
 
 .container-delegate {
@@ -430,10 +431,7 @@ input:nth-child(2) {
   font-size: 1.8rem;
 }
 
-
 /* =====> Fim nextAct <====== */
-
-
 
 
 
@@ -466,6 +464,23 @@ input:nth-child(2) {
 }
 
 /* =====> Fim firstAct <====== */
+
+
+/* =====> eMain <====== */
+
+.execute-main {
+  width: 90%;
+  height: 380px;
+  display: flex;
+  align-items: center;
+}
+
+.execute-main .container-btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* =====> Fim do Emain <====== */
 
 
 
