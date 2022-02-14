@@ -15,7 +15,7 @@ const labelTask = async (event) => {
   const { id } = labels.find((label) => event.target.className === label.name);
   const task = document.querySelector('.act-task').firstChild;
   await addLabel(tokenDanillo, task.innerText, task.id, id);
-  location.href = '/home';
+  location.href = '/';
 };
 
 buttonHome.addEventListener('click', labelTask);

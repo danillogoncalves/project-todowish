@@ -19,7 +19,7 @@ const labelTask = async (event) => {
   if (event.target.className === 'próxima_ação') {
     location.href = '/nextAct';
   } else {
-    location.href = '/home';
+    location.href = '/';
   }
 };
 

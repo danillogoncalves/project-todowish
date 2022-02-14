@@ -9,7 +9,7 @@ const tokenErik = '7838490470f3e27a7e6037026106d47f12d05b89';
 
 const deleteTaskClick = async (event) => {
   await deleteTask(event.target.id, tokenDanillo);
-  location.href = '/home';
+  location.href = '/';
 };
 
 const labelInfo = await getLabels(tokenDanillo)
