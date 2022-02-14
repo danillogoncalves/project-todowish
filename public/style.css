@@ -296,14 +296,28 @@ input:nth-child(2) {
 
 
 
-/* =====> Delegate <====== */
+/* =====> now <====== */
+
+.container-label p {
+  color: var(--offwhite2);
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.container-label span {
+  text-align: center;
+  font-size: 4rem;
+  margin-right: 5px;
+}
+
+/* =====> fim do now <====== */
 
 
 
 /* =====> not <====== */
 
 .not-action {
-  width: 80%;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -367,7 +381,58 @@ input:nth-child(2) {
   justify-content: center;
 }
 
-/* =====> fim do agenda <====== */
+/* =====> fim do agendar <====== */
+
+
+
+
+/* =====> delegate <====== */
+
+.container-delegate {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-delegate .container-btn {
+  justify-content: center;
+}
+
+.container-delegate .delegate-text {
+  width: 100%;
+}
+
+.container-delegate img {
+  width: 60px;
+  margin: 40px 0;
+}
+
+/* =====> fim do delegate <====== */
+
+
+
+
+/* =====> Inicio nextAct <====== */
+
+.container-nextAct {
+  width: 90%;
+}
+
+.container-nextAct .container-btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.label {
+  color: var(--blue1);
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+
+/* =====> Fim nextAct <====== */
+
 
 
 
@@ -403,9 +468,6 @@ input:nth-child(2) {
 /* =====> Fim firstAct <====== */
 
 
-.container-delegate img{
-  width: 70px;
-}
 
 /* =====> Footer <====== */
 .logo {
