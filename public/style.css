@@ -34,6 +34,29 @@ main {
   margin: auto;
 }
 
+/* =====> header <====== */
+
+.header {
+  margin: auto;
+  height: 90px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.header img {
+  width: 50px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 250px;
+}
+
 /* ======> CONTROLE DE PAGE/SECTION <====== */
 
 #hide {
@@ -220,18 +243,6 @@ main {
 } */
 
 /* =====> Fim button sim e não <====== */
-
-/* =====> eHome <====== */
-
-.eHome-header {
-  height: 70px;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-}
-.eHome-header img {
-  width: 70px;
-}
 
 /* =====> Delegate <====== */
 
