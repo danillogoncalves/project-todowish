@@ -10,6 +10,6 @@ const input = document.querySelector('#capture')
 
 button.addEventListener('click', async () => {
   await createNewTask(tokenDanillo, input.value);
-  location.href = '/home';
+  location.href = '/';
 });
 
