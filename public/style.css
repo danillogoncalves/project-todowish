@@ -6,7 +6,7 @@
 }
 
 :root {
-  --background--page: #f4eee6;
+  /* --background--page: #f4eee6;
   --background--textarea: #e5e5e5;
   --button-green: #62dc79;
   --button-green1: #0ea52e;
@@ -20,14 +20,36 @@
   --process-yellow: #ffeb3b;
   --process-magenta: #673ab7;
 
-  --color-blue-1: #4963be;
+  --color-blue-1: #4963be; */
+
+
+/* Color Themes */
+
+  /* CORES ATIVAS */
+  --blue1: #4963be;
+  --blue2: #2E6FF2;
+  --blue3: #54ACBF;
+  --orange: #F27D16;
+
+  /* TONS DE CINZA */
+  --gray4: #191919;
+  --gray3: #494846;
+  --gray1: #5e5e5e;
+  --gray2: #bebebe;
+
+  /* TONS OFFWHITE */
+  --offwhite: #F2F2F2;
+  --offwhite2:#e5e5e5;
 }
 
-body {
-  background: var(--background--page);
-}
 
 /* ELEMENTOS */
+
+body {
+  background: var(--offwhite);
+}
+
+
 main {
   width: 90%;
   height: 100vh;
@@ -55,6 +77,14 @@ main {
   flex-direction: row;
   justify-content: space-between;
   width: 250px;
+}
+
+.eDelegate-header h1{
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* ======> CONTROLE DE PAGE/SECTION <====== */
@@ -101,30 +131,25 @@ main {
   opacity: 50%;
 }
 
-.container .btn-capture {
+.btn-capture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0px 0px auto 0px;
-  width: 321px;
-  height: 133px;
-  font-size: 48px;
+  width: 320px;
+  height: 130px;
+  font-size: 3rem;
   font-weight: 700;
-  background: var(--button-green);
-  opacity: 70%;
+  text-decoration: none;
+  background: var(--blue3);
+  color: var(--offwhite);
   border: none;
   border-radius: 16px;
   cursor: pointer;
 }
 
-.container .btn-capture:hover {
-  margin: 0px 0px auto 0px;
-  width: 321px;
-  height: 133px;
-  font-size: 48px;
-  font-weight: 700;
-  background: var(--button-green1);
-  opacity: 70%;
-  border: none;
-  border-radius: 16px;
-  cursor: pointer;
+.btn-capture:hover {
+  background: var(--orange);
 }
 
 .capture-text {
@@ -135,116 +160,149 @@ main {
   margin: 100px;
 }
 
+
+
+
 /* =====> inicial-capture <====== */
+
 .capture-text .btn-capture {
   margin: 50px;
 }
 
 .capture-text {
   width: 80%;
-  background-color: var(--background--textarea);
-  font-size: 3rem;
-  color: var(--color-font-1);
+  background-color: var(--offwhite2);
+  font-size: 2.5rem;
+  color: var(--gray1);
   text-align: center;
   padding: 30px;
   border-radius: 30px;
   height: 400px;
   resize: none;
-  border: solid 2px var(--button-green);
+  border: solid 2px var(--blue3);
 }
+
 /* =====> finish inicial-capture <====== */
 
+
+
+
+
 /* =====> process-main <====== */
+
 .process-main {
   padding: 100px;
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: auto;
 }
 
 .process-main h2 {
-  color: var(--process-gray1);
-  margin-bottom: 80px;
+  color: var(--gray4);
   text-align: center;
   font-size: 2rem;
 }
 
-.tasks li {
-  display: block;
-  margin: 10px;
-  padding: 10px 20px;
-  background-color: var(--process-gray3);
-  color: var(--process-gray2);
-  height: 100px;
-  font-size: 1.5rem;
-  border-radius: 12px;
-  border: solid 1px var(--process-gray1);
-}
-
 .tasks {
+  width: 100%;
   margin-top: 50px;
   display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.tasks li {
+  display: flex;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: var(--offwhite2);
+  color: var(--gray3);
+  height: 80px;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  border: solid 2px var(--blue3);
 }
 
 .tasks li:hover {
-  background-color: var(--process-yellow);
-  color: var(--process-gray1);
+  background-color: var(--blue3);
+  color: var(--offwhite2);
 }
+
 /* =====> finish process-main <====== */
 
+
+
 /* =====> Modal config <====== */
+
 .modal-background {
   position: absolute;
   margin: auto;
   width: 90%;
   height: 100vh;
-  background: #c4c4c496;
 }
 
+
 .modal {
-  background: #e7ded1;
+  background: var(--blue3);
   width: 70%;
   height: 370px;
   border-radius: 16px;
   margin: auto;
 }
 
-.modal p {
+.modal li {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  border: solid 2px var(--blue1) ;
+  padding: 10px 5px;
+  background-color: var(--offwhite2);
   text-align: center;
-  margin-top: 85px;
   font-size: 1.5rem;
-  color: #000000;
+  color: var(--blue3);
 }
 
-.modal p + p {
-  margin-top: 20px;
-  color: #0000009f;
+.act-task {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5rem;
+  color: var(--offwhite2);
+}
+
+.cta {
+  padding-top: 50px;
+  font-size: 2.5rem;
+  color: var(--offwhite2);
 }
 
 /* =====> finish modal config <====== */
 
-/* =====> button sim e não <====== */
 
-/* .bnt-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 50px;
-  width: 400px;
-}
-.bnt-container button {
-  border: none;
-  border-radius: 16px;
-  background: #4963be;
-  width: 150px;
-  height: 56px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: white;
-} */
 
-/* =====> Fim button sim e não <====== */
 
 /* =====> Delegate <====== */
+
+
+
+/* =====> not <====== */
+
+.not-action {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.not-action .container-btn {
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* =====> fim do not <====== */
+
+
 
 
 /* =====> Inicio firstAct <====== */
@@ -253,10 +311,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.first-action p {
-  font-size: 1.8rem;
 }
 
 .container-btn {
@@ -270,7 +324,7 @@ main {
 .container-btn button {
   border: none;
   border-radius: 16px;
-  background: var(--color-blue-1);
+  background: var(--blue1);
   width: 150px;
   height: 50px;
   font-size: 1.2rem;
@@ -281,16 +335,17 @@ main {
 /* =====> Fim firstAct <====== */
 
 
+
+
+
 .container-delegate img{
   width: 70px;
 }
 
 /* =====> Footer <====== */
 .logo {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  margin: 80vh auto 0px auto;
+  width: 80%;
   height: 60px;
   text-align: center;
   font-size: 20px;
