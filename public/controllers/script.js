@@ -2,6 +2,7 @@ import createLabel from '../helpers/createLabel.js';
 
 const tokenDanillo = 'c6de81bf5190fe4984d9817473cebac3cbfae44a';
 const tokenSheila = '934509d71c8b03ad32cc2d84eed7585ee2991228';
+const tokenErik = '7838490470f3e27a7e6037026106d47f12d05b89';
 
 const taskUl = document.querySelector('.act-task');
 const newLi = localStorage.getItem('task');
@@ -19,5 +20,5 @@ const labelNames = [
 ];
 
 labelNames.forEach(({ name, color }) => {
-  createLabel(tokenDanillo, name, color);
+  createLabel(tokenErik, name, color);
 });
