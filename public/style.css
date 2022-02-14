@@ -469,7 +469,7 @@ input:nth-child(2) {
 
 
 
-/* =====> Eschedule <====== */
+/* =====> Schedule <====== */
 
 .eSchedule {
   width: 100%;
@@ -496,14 +496,14 @@ input:nth-child(2) {
   color: var(--offwhite2);
 }
 
-/* =====> Fim do Eschedule <====== */
+/* =====> Fim do Schedule <====== */
 
 
 
 
 
 
-/* =====> EscheduleWeek <====== */
+/* =====> ScheduleWeek <====== */
 
 .eScheduleWeek {
   width: 100%;
@@ -530,14 +530,14 @@ input:nth-child(2) {
   color: var(--offwhite2);
 }
 
-/* =====> Fim do EscheduleWeek <====== */
+/* =====> Fim do ScheduleWeek <====== */
 
 
 
 
 
 
-/* =====> Edelegate <====== */
+/* =====> eDelegate <====== */
 
 .eDelegate {
   width: 100%;
@@ -564,16 +564,16 @@ input:nth-child(2) {
   color: var(--offwhite2);
 }
 
-/* =====> Fim do Edelegate <====== */
+/* =====> Fim do eDelegate <====== */
 
 
 
 
 
 
-/* =====> Ejob <====== */
+/* =====> eJob <====== */
 
-.ejob {
+.eJob {
   width: 100%;
   margin-top: 50px;
   display: flex;
@@ -581,7 +581,7 @@ input:nth-child(2) {
   align-content: center;
 }
 
-.ejob li {
+.eJob li {
   display: flex;
   margin: 10px;
   padding: 10px 20px;
@@ -593,12 +593,12 @@ input:nth-child(2) {
   border: solid 2px var(--blue3);
 }
 
-.ejob li:hover {
+.eJob li:hover {
   background-color: var(--blue3);
   color: var(--offwhite2);
 }
 
-/* =====> Fim do Ejob <====== */
+/* =====> Fim do eJob <====== */
 
 
 
