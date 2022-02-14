@@ -484,6 +484,102 @@ input:nth-child(2) {
 
 
 
+
+/* =====> Eschedule <====== */
+
+.eSchedule {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.eSchedule li {
+  display: flex;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: var(--offwhite2);
+  color: var(--gray3);
+  height: 80px;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  border: solid 2px var(--blue3);
+}
+
+.eSchedule li:hover {
+  background-color: var(--blue3);
+  color: var(--offwhite2);
+}
+
+/* =====> Fim do Eschedule <====== */
+
+
+
+
+/* =====> Eschedule <====== */
+
+.eScheduleWeek {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.eScheduleWeek li {
+  display: flex;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: var(--offwhite2);
+  color: var(--gray3);
+  height: 80px;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  border: solid 2px var(--blue3);
+}
+
+.eScheduleWeek li:hover {
+  background-color: var(--blue3);
+  color: var(--offwhite2);
+}
+
+/* =====> Fim do Eschedule <====== */
+
+
+
+/* =====> Eschedule <====== */
+
+.eDelegate {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.eDelegate li {
+  display: flex;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: var(--offwhite2);
+  color: var(--gray3);
+  height: 80px;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  border: solid 2px var(--blue3);
+}
+
+.eDelegate li:hover {
+  background-color: var(--blue3);
+  color: var(--offwhite2);
+}
+
+/* =====> Fim do Eschedule <====== */
+
+
+
+
 /* =====> Footer <====== */
 .logo {
   position: absolute;
