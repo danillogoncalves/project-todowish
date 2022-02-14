@@ -1,4 +1,5 @@
 import getTasks from '../helpers/getTasks.js';
+import getLabels from '../helpers/getLabels';
 // import getOneTask from '../helpers/getOneTask.js';
 
 const tokenDanillo = 'c6de81bf5190fe4984d9817473cebac3cbfae44a';
@@ -10,10 +11,10 @@ const setId = (event) => {
   localStorage.setItem('task', event.target.parentNode.innerHTML);
 }
 
+
 getTasks(tokenSheila).then((response) => {
-  const ulTask = document.querySelector('.tasks');
-  response.filter((label) => label.label_ids.length === 0)
-  .forEach(({ content, id }) => {
+  const ulTask = document.querySelector('.eSchedule');
+  response.forEach(({ content, id }) => {
     const li = document.createElement('li');
     const link = document.createElement('a');
     link.href = '/firstAct';
@@ -24,3 +25,8 @@ getTasks(tokenSheila).then((response) => {
     ulTask.appendChild(link);
   });
 }); 
+// precisa pegar a lista de labels para ver o id do agendar e fazer o filtro para imprimir a lista de tarefas filtradas
+/* getLabels(tokenSheila).then((response) => {
+  console.log(response);
+})
+ */

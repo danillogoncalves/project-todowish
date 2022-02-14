@@ -11,9 +11,8 @@ const setId = (event) => {
 }
 
 getTasks(tokenSheila).then((response) => {
-  const ulTask = document.querySelector('.tasks');
-  response.filter((label) => label.label_ids.length === 0)
-  .forEach(({ content, id }) => {
+  const ulTask = document.querySelector('.ejob');
+  response.forEach(({ content, id }) => {
     const li = document.createElement('li');
     const link = document.createElement('a');
     link.href = '/firstAct';
