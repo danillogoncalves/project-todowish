@@ -1,10 +1,5 @@
 import createLabel from '../helpers/createLabel.js';
-
-const tokenDanillo = 'c6de81bf5190fe4984d9817473cebac3cbfae44a';
-const tokenSheila = '781f034d92276ce1e67bd20bf7222eb8badeea91';
-const tokenErik = '7838490470f3e27a7e6037026106d47f12d05b89';
-const tokenAndre = 'd8e916333409c64935c6ab17c3d5127f31f8649f';
-
+import { tokenSheila, tokenDanillo, tokenAndre, tokenErik } from './token.js';
 
 const taskUl = document.querySelector('.act-task');
 const newLi = localStorage.getItem('task');
@@ -22,5 +17,5 @@ const labelNames = [
 ];
 
 labelNames.forEach(({ name, color }) => {
-  createLabel(tokenDanillo, name, color);
+  createLabel(tokenSheila, name, color);
 });
